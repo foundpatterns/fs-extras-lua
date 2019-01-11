@@ -1,7 +1,7 @@
 function fs.get_all_files_in(directory)
 
-  if directory.sub(-1, -1) ~= "/" then
-    directory = directory .. "/"
+  if directory.sub(-1, -1) ~= path_separator then
+    directory = directory .. path_separator
   end
 
   local filenames = {}
