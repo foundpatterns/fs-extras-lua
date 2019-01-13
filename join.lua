@@ -1,3 +1,4 @@
 function fs.join(...)
-  return table.concat({...}, path_separator)
+  path_separator = "/"
+  return fs.sanitize(table.concat({...}, path_separator))
 end
